@@ -29,6 +29,7 @@ body {
   background-repeat: no-repeat; /* não deixa a imagem se repetir */
   background-position: top center; /* reposiciona a imagem no meio centralizado no centro do eixo x*/
   background-size: cover; /* cobrir toda a area visivel */
+  height: 100vh;
 
   /* agrupamento de todas essas linhas: 
   background-image: url(./assets/bg-mobile.jpg) no-repeat top center/cover
@@ -167,4 +168,15 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* Media queries */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
